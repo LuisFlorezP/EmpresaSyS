@@ -1,69 +1,204 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 15px;
+  width: 100%;
+  height: 100%;
+  color: white;
 }
 
 a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+  text-decoration: none;
 }
 
-body {
-  margin: 0;
+#inicio {
+  background-image: url(Img/DragonBall.jpg);
+  background-position: left center;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+#login {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding-top: 28px;
+  color: black;
+  width: 30%;
+  height: 55px;
+  background-color: rgb(11, 11, 13);
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 4px solid white;
+  border-radius: 10%;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+#empresa {
+  font-size: 25px;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.pagina {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;   
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 100vh;
+  background-color: rgb(30, 48, 184);
+  margin-right: 10px;
+  position: fixed;
+  border-right: 4px solid white;
+}
+
+#logo {
+  margin-top: 60px;
+  width: 130px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 8px solid white;
+  /* background-color: aqua; */
+}
+
+.menusito {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+  /* background-color: aqua; */
+}
+
+#navsito {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.valores {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  border-left: 4px solid white;
+  border-right: 4px solid white;
+  border-bottom: 4px solid white;
+  border-end-end-radius: 40%;
+  border-end-start-radius: 40%;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  width: 160px;
+  padding-bottom: 5px;
+}
+
+.valores:hover {
+  transform: scale(1.1);
+}
+
+#linkInicio {
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: brown; */
+}
+
+#logoInicio {
+  width: 70px;
+  height: auto;
+}
+
+#logoInicio:hover {
+  transform: scale(1.1);
+}
+
+#fondoInicial {
+  background-image: url(Img/FondoInicial.jpg);
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1  00%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.contenido {
+  margin-left: 22%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.cardCliente {
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 0px;
+  background-color: rgb(30, 48, 184);
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  height: 320px;
+  border: 5px outset;
+  border-radius: 30px;
+}
+
+.imagenCliente {
+  width: auto;
+  height: 100px;
+}
+
+
+.cardProveedorCliente {
+  margin: 20px;
+  background-color: rgb(30, 48, 184);
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  height: 250px;
+  border: 5px outset;
+  border-radius: 30px;
+}
+
+.imagenProveedorCliente {
+  width: auto;
+  height: 60px;
+}
+
+h3 {
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+
+.info {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
